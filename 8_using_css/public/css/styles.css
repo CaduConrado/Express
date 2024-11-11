@@ -1,0 +1,114 @@
+/* Estilos Gerais - Reset e centralização */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; /* Fundo cinza-escuro */
+    color: #f5f5f5;            /* Texto branco-suave */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para o título principal (h1) */
+h1 {
+    font-size: 3em;
+    color: #4CAF50; /* Verde-claro para destaque */
+    margin-bottom: 20px;
+}
+
+/* Estilo de contêiner para o restante do conteúdo */
+.content {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333; /* Fundo mais escuro para o contêiner */
+}
+
+/* Estilo para textos adicionais dentro do contêiner */
+p {
+    font-size: 1.2em;
+    color: #bdbdbd; /* Cinza claro */
+    margin: 10px 0;
+}
+
+/* Estilo para campos de formulário */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #1a1a1a; /* Cor do fundo do campo */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #45a049; /* Realça a borda ao focar */
+}
+
+/* Estilo do botão */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: #4CAF50; /* Cor verde para o botão */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Tom mais escuro no hover */
+}
+
+/* Estilos Específicos para a Página 404 */
+.error-code {
+    font-size: 5em;
+    color: #4CAF50; /* Verde para o código de erro */
+    margin-bottom: 20px;
+}
+
+.error-message {
+    font-size: 1.3em;
+    color: #4CAF50;
+    margin: 15px 0;
+}
+
+/* Responsividade: ajusta o layout para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 0.9em;
+    }
+}
